@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Investigation Tool Explorer</title>
+  
+  
+  
+  
+  
+</head>
+
+<body>
+
+  <html lang="en">
+<head>
+    <title>Digital Communication Decision Aid</title>
+
+    <meta charset="UTF-8">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ 
+    <link rel="stylesheet" type="text/css" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/761985/dc.css"/>
+
+    <style>
+        #monthly-volume-chart g.y {
+            display: none;
+        }
+        #logo {
+            margin-right: 2em;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Digital Communication Decision Aid</h2>
+      <h4>Hillary Clinton Emails - An Investigation Tool Explorer</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div id="berber-rating-chart">
+          <strong>By Number of Staff</strong>
+      </div>
+      <a class="reset" href="javascript:myRatingChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+    </div>
+    <div class="col-md-6">
+      <strong>By Individuals</strong>
+      <div id="aor-chart">
+        <a class="reset" href="javascript:aorChart.filterAll();dc.redrawAll();"
+           style="display: none;"></a>
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="611.051px" height="296.259px" viewBox="0.569 247.933 611.051 296.259"
+	 enable-background="new 0.569 247.933 611.051 296.259" xml:space="preserve">
+</svg>
+      </div>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div id="socialmedia-count-chart">
+        <strong>By Email Subjects</strong>
+        <a class="reset" href="javascript:socialmediasourceCountChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div id="keyword-count-chart">
+        <strong>By Keywords</strong>
+        <a class="reset" href="javascript:languageChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="dc-data-count">
+        <span class="filter-count"></span> selected out of <span class="total-count"></span> records | <a href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
+      </div>
+    </div>
+    <h3>Tools</h3>
+    <table class="table table-hover dc-data-table">
+    </table>
+  </div>
+  </div>
+
+<script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/761985/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/761985/d3.js"></script>
+<script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/761985/crossfilter.js"></script>
+<script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/761985/dc.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+<!--<script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/761985/berber-rankings.js"></script>-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        loadCsv('https://raw.githubusercontent.com/Mithileysh/sift-ediscovery/master/Datasets/Hillary%20Clinton/hillary_simulation.csv');
+    })
+</script>
+
+</body>
+</html>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
